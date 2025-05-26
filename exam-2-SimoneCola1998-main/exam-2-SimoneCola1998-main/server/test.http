@@ -1,0 +1,21 @@
+@APIURL=http://localhost:3000/api
+// Test login
+POST {{APIURL}}/login
+Content-Type: application/json
+
+{
+    "username": "simone.cola@gmail.com",
+    "password": "1234"
+}
+
+### 
+
+//Test Reservations
+
+POST {{APIURL}}/seats
+Content-Type: application/json
+{
+    "seatId": "10A",
+    "planeId": "1",
+    "userId": "1"
+}
